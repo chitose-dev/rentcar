@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>レンタカー予約サイト | 株式会社ビップオート</title>
-    <link rel="stylesheet" href="all.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="add.css">
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
     <!-- ヘッダー -->
@@ -15,7 +15,7 @@
         <div class="header__inner">
             <div class="headerLogo">
                 <a href="/">
-                    <h1 style="color: #FFD700; font-size: 24px; margin: 0;">ビップオート</h1>
+                    <img src="images/logo.png" alt="ビップオート">
                 </a>
             </div>
             
@@ -55,12 +55,11 @@
     <!-- メインビジュアル -->
     <section class="mv">
         <div class="mv__inner">
-            <div style="width: 100%; height: 500px; background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); position: relative;">
-                <div class="mv__text">
-                    <h1 class="mv__title">安心・安全のレンタカー</h1>
-                    <p class="mv__subtitle">長期レンタルでお得にご利用いただけます</p>
-                    <a href="reservation.html" class="mv__btn">今すぐ予約する</a>
-                </div>
+            <img src="images/main-visual.jpg" alt="メインビジュアル" class="mv__img">
+            <div class="mv__text">
+                <h1 class="mv__title">安心・安全のレンタカー</h1>
+                <p class="mv__subtitle">長期レンタルでお得にご利用いただけます</p>
+                <a href="reservation.html" class="mv__btn">今すぐ予約する</a>
             </div>
         </div>
     </section>
@@ -69,7 +68,7 @@
     <section id="price" class="price">
         <div class="inner">
             <h2 class="section__title">
-                <span style="color: #333; font-size: 36px; font-weight: bold;">料金表</span>
+                <img src="images/price-title.png" alt="料金表" class="price__head">
             </h2>
 
             <!-- 軽自動車クラス -->
@@ -85,9 +84,7 @@
                 <div class="price__Box">
                     <div class="price__content">
                         <div class="price__contentInner">
-                            <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%); display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                                <span style="font-size: 48px;">🚗</span>
-                            </div>
+                            <img src="images/car-kei.jpg" alt="軽自動車" class="inner__img">
                             <table class="price__table">
                                 <tr>
                                     <th>10日間</th>
@@ -121,9 +118,7 @@
                 <div class="price__Box">
                     <div class="price__content">
                         <div class="price__contentInner">
-                            <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%); display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                                <span style="font-size: 48px;">🚐</span>
-                            </div>
+                            <img src="images/car-van.jpg" alt="商用車" class="inner__img">
                             <table class="price__table">
                                 <tr>
                                     <th>10日間</th>
@@ -150,7 +145,7 @@
     <section class="insurance">
         <div class="inner">
             <h2 class="section__title">
-                <span style="color: #333; font-size: 36px; font-weight: bold;">免責保証について</span>
+                <img src="images/insurance-title.png" alt="免責保証について" class="insurance__head">
             </h2>
 
             <div class="insurance__btn">
@@ -216,7 +211,7 @@
     <section id="flow" class="flow">
         <div class="inner">
             <h2 class="section__title">
-                <span style="color: #333; font-size: 36px; font-weight: bold;">ご利用の流れ</span>
+                <img src="images/flow-title.png" alt="ご利用の流れ" class="flow__head">
             </h2>
 
             <div class="flow__content">
@@ -257,7 +252,7 @@
     <section id="faq" class="faq">
         <div class="inner">
             <h2 class="section__title">
-                <span style="color: #333; font-size: 36px; font-weight: bold;">よくある質問</span>
+                <img src="images/faq-title.png" alt="よくある質問" class="faq__head">
             </h2>
 
             <div class="faq__list">
@@ -295,7 +290,7 @@
     <section id="shop" class="shop">
         <div class="inner">
             <h2 class="section__title">
-                <span style="color: #333; font-size: 36px; font-weight: bold;">店舗情報</span>
+                <img src="images/shop-title.png" alt="店舗情報" class="shop__head">
             </h2>
 
             <div class="shop__content">
@@ -341,17 +336,17 @@
 
     <!-- フローティング予約ボタン -->
     <div class="floatMenu">
-        <a href="reservation.html" class="reserve-btn" style="background: #FFD700; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #333; text-decoration: none;">
-            予約
+        <a href="reservation.html" class="reserve-btn">
+            <img src="images/reserve-btn.png" alt="予約する">
         </a>
-        <a href="tel:0736-62-1122" class="tel" style="background: #4CAF50; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #fff; text-decoration: none;">
-            電話
+        <a href="tel:0736-62-1122" class="tel">
+            <img src="images/tel-btn.png" alt="電話する">
         </a>
     </div>
 
-    <script src="jquery-3_4_1_min.js"></script>
-    <script src="app_min.js"></script>
-    <script src="add.js"></script>
-    <script src="custom.js"></script>
+    <script src="js/jquery-3_4_1_min.js"></script>
+    <script src="js/app_min.js"></script>
+    <script src="js/add.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>
